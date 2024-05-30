@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Nav from './Components/Navbar';
+import Footer from "./Components/Footer";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Project from "./Components/Projects";
+import HashLoader from "react-spinners/HashLoader";
+
 
 function App() {
+  const[Loading,SetLoading]=useState(true);
+
+  useEffect(()=>{
+    SetLoading(true)
+
+    setTimeout(()=>{
+    SetLoading(false)}
+    ,1500)
+  },[])  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {Loading ? (
+      <div className="loader"> 
+        <HashLoader
+          color={'#00FFFF'}
+          loading={true}
+          size={100}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+      ):(
+      <div>
+
+      <Nav/>
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Project" element={<Project/>}/>
+      </Routes>
+      
+      <Footer/>
+      </div>
+      )}  
+    </>
   );
 }
 
