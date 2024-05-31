@@ -18,6 +18,9 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     GamaiynDesc : "This website is created using bootstrap. It is a online gaming site demo.",
     GamaiynGithub : "https://github.com/siddiqui0013/gamaiyn",
 
+    Attendance_ManagementDesc : "This is a full stack Attendence Management System (MERN) with user and admin panel.",
+    Attendance_ManagementGithub : "https://github.com/siddiqui0013/attentance-system",
+
   }
 
   return (
