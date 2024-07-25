@@ -13,7 +13,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     eDukan69Github : "https://edukan69.netlify.app/",
 
     CeaserCipherDesc : "This website is created with HTML, CSS, Javascript, to enctypt/decrypt Ceaser Cipher text.",
-    CeaserCipherGithub : "https://github.com/siddiqui0013/ceaser",
+    CeaserCipherGithub : "https://siddiqui0013.github.io/ceaser/",
 
     GamaiynDesc : "This website is created using bootstrap. It is a online gaming site demo.",
     GamaiynGithub : "https://gaimayn.netlify.app/",
