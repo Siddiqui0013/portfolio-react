@@ -40,7 +40,7 @@ const Nav = () => {
             <ul className={classNames('NavbarLinks', { showNavbar: menuOpen })}>
                 <li onClick={closeMenu}><Link to="/"><AiOutlineHome /> Home</Link></li>
                 <li onClick={closeMenu}><Link to="/About"><BsPerson /> About</Link></li>
-                <li onClick={closeMenu}><Link to="/Project"><BsCodeSlash /> Project</Link></li>
+                <li onClick={closeMenu}><Link to="/Project"><BsCodeSlash /> Projects</Link></li>
                 <li onClick={closeMenu}>
                     <a href={pdf} download="Muhammad Asif"><CgFileDocument /> Resume</a>
                 </li>
